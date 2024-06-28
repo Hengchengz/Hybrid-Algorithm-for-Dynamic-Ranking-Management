@@ -1,2 +1,13 @@
 # Hybrid-Algorithm-for-Dynamic-Ranking-Management
 Use of hybrid algorithm of binary search and insertion algorithm in dynamic ranking
+
+- Dynamic ranking systems are very important for online game leaderboards. How can ranking scores be efficiently managed and updated in real time? This talk introduces a hybrid algorithm that combines binary search and insertion sort to solve this challenge, ensuring the efficiency and accuracy of real-time updates.
+- To efficiently update player ranking scores in real time, the goal is twofold. First, new scores need to be inserted efficiently while keeping the list ordered. Second, it is essential to ensure efficiency even when dealing with large amounts of data. To achieve this, a hybrid algorithm combining binary search and insertion sort is used. Binary search, with a time complexity of O(log n), is highly efficient for frequent insertions. Insertion sort maintains the order by moving elements, making it suitable for dynamic update scenarios. This combination ensures efficient handling of dynamic ranking management.
+- The core of binary insertion sort is to quickly find the insertion position using binary search. Binary search reduces the time complexity of finding the insertion position from linear O(n) to O(log n), making hybrid algorithms more efficient when processing large amounts of data. Binary search accurately locates the position for a new element in a sorted array, ensuring both speed and precision in the insertion process.
+- Here is the implementation of the hybrid algorithm, combining binary search and insertion sort. The algorithm starts by initializing the left and right indices and saving the current element to be inserted. Using binary search, the insertion position is found. All elements to the right of the insertion position are then shifted one position to the right, making space for the new element. Finally, the current element is inserted into the correct position. This process keeps the array sorted while efficiently handling new insertions.
+- An example run of the algorithm starts with an unsorted array of integers. After applying the binary insertion sort, the array is efficiently sorted. The output demonstrates that the hybrid algorithm effectively solves the problem of dynamic ranking updates. Insertion efficiency is improved, making the algorithm suitable for scenarios where ranking scores are updated in real time. This ensures that dynamic ranking systems remain accurate and efficient even with frequent updates.
+
+
+**Hengcheng Zhang**
+**hzhang7@sdsu.edu**
+**820132411**
